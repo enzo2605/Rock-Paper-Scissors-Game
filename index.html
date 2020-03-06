@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+
+    <title>Rock, Paper & Scissors</title>
 </head>
 <body>
+    <div class="wrapper clearfix">
+
+        <div class="game-name">
+            <span class="game-name__text">Rock, Paper & Scissors</span>
+        </div>
     
+        <div class="box-game">
+    
+            <div class="box-game__score">
+    
+                <div class="box-game--player player-1-panel">
+
+                    <div class="box-game--player-name">User</div>
+    
+                    <div class="box-game--player__current">
+                        <div class="box-game--player__current-label">SCORE</div>
+                        <div class="box-game--player__current-score" id="name-1">0</div>
+                    </div>
+    
+                </div>
+    
+                <div class="box-game--player player-2-panel">
+
+                    <div class="box-game--player-name">Computer</div>
+    
+                    <div class="box-game--player__current">
+                        <div class="box-game--player__current-label">SCORE</div>
+                        <div class="box-game--player__current-score" id="name-2">0</div>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <div class="box-game__result row">
+                
+                <div class="col-1-of-3 box-game__result--el">
+                    <div class="choice"><img src="img/paper.png" class="choice__img"></div>
+                </div>
+
+                <div class="col-1-of-3 box-game__result--el box-game__result--text">
+                    <span id="user-result" class="results">Paper</span> cover <span id="pc-result" class="results">Rock</span>. 
+                    <span id="winner" class="results">You</span> win!
+                </div>
+
+                <div class="col-1-of-3 box-game__result--el">
+                    <div class="choice"><img src="img/rock.png" class="choice__img"></div>
+                </div>
+
+            </div>
+
+            <div class="box-game__choices">
+                <h1 class="heading-primary">Make your choice: </h1>
+                <div class="row">
+
+                    <div class="col-1-of-3 box-game__choices--el">
+                        <div class="circle">
+                            <img src="img/rock.png" class="choice__img">
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 box-game__choices--el">
+                        <div class="circle">
+                            <img src="img/paper.png" class="choice__img">
+                        </div>
+                    </div>
+
+                    <div class="col-1-of-3 box-game__choices--el">
+                        <div class="circle">
+                            <img src="img/scissors.png" class="choice__img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
+<script src="js/script.js"></script>
 </html>

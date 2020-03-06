@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-grey-light;
+    font-family: 'Lato';
+}
+
+.wrapper {
+    width: 102.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-white;
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 5rem rgba($color-black, .3);
+}

@@ -1,0 +1,73 @@
+.box-game {
+    width: 100%;
+    padding: 2rem;
+    background-color: $color-black-2;
+    border-radius: 2rem;
+    color: $color-white;
+
+    &__score {
+        display: flex;
+        flex-direction: row;
+        border: .2rem solid $color-white;
+        text-transform: uppercase;
+        margin-top: 2rem;
+    }
+
+    &--player {
+        width: 50%;
+        text-align: center;
+        font-size: 3rem;
+
+        &-name {
+            font-size: 4rem;
+            letter-spacing: .2rem;
+            font-weight: 100;
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        &__current {
+            background-color: #EB4D4D;
+            width: 15rem;
+            margin: 2rem auto;
+
+            &-label {
+                color: $color-black-2;
+                font-size: 1.6rem;
+                padding: 1rem 0;
+                text-transform: uppercase;
+            }
+
+            &-score {
+                font-size: 5rem;
+                font-weight: 700;
+            }
+        }
+    }
+    
+    &__result {
+        margin: 2rem 12rem;
+
+        &--el {
+            text-align: center;
+        }
+
+        &--text {
+            margin: 3rem auto;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+    }
+
+    &__choices {
+
+        margin: 2rem 12rem;
+        text-align: center;
+
+        &--el {
+            text-align: center;
+        }
+    }
+
+}

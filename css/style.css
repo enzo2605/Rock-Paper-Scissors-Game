@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: 'Lato'; }
+
+.wrapper {
+  width: 102.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.3); }
+
+.heading-primary {
+  margin: 3rem auto;
+  font-weight: 800;
+  font-size: 2rem; }
+
+.game-name {
+  background-color: #EB4D4D;
+  text-align: center;
+  color: #fff;
+  width: 25rem;
+  position: absolute;
+  top: 0rem;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .game-name__text {
+    font-size: 2.5rem;
+    color: #eee; }
+
+.circle {
+  border: 0.5rem solid #fff;
+  border-radius: 50%;
+  width: 50%;
+  margin: 0 auto; }
+
+.box-game {
+  width: 100%;
+  padding: 2rem;
+  background-color: #24272E;
+  border-radius: 2rem;
+  color: #fff; }
+  .box-game__score {
+    display: flex;
+    flex-direction: row;
+    border: 0.2rem solid #fff;
+    text-transform: uppercase;
+    margin-top: 2rem; }
+  .box-game--player {
+    width: 50%;
+    text-align: center;
+    font-size: 3rem; }
+    .box-game--player-name {
+      font-size: 4rem;
+      letter-spacing: .2rem;
+      font-weight: 100;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+      position: relative; }
+    .box-game--player__current {
+      background-color: #EB4D4D;
+      width: 15rem;
+      margin: 2rem auto; }
+      .box-game--player__current-label {
+        color: #24272E;
+        font-size: 1.6rem;
+        padding: 1rem 0;
+        text-transform: uppercase; }
+      .box-game--player__current-score {
+        font-size: 5rem;
+        font-weight: 700; }
+  .box-game__result {
+    margin: 2rem 12rem; }
+    .box-game__result--el {
+      text-align: center; }
+    .box-game__result--text {
+      margin: 3rem auto;
+      font-weight: 800;
+      font-size: 2rem; }
+  .box-game__choices {
+    margin: 2rem 12rem;
+    text-align: center; }
+    .box-game__choices--el {
+      text-align: center; }
+
+.row {
+  display: flex;
+  flex-direction: row; }
+  .row .col-1-of-3 {
+    width: 33.33333%; }

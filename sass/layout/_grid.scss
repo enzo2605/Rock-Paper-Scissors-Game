@@ -1,0 +1,9 @@
+.row {
+
+    display: flex;
+    flex-direction: row;
+
+    & .col-1-of-3 {
+        width: 33.33333%;
+    }
+}
