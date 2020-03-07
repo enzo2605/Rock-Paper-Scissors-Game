@@ -58,6 +58,9 @@ body {
     background-color: #06bb06;
     transform: scale(1.2); }
 
+.results {
+  text-transform: capitalize; }
+
 .box-game {
   width: 100%;
   padding: 2rem;
