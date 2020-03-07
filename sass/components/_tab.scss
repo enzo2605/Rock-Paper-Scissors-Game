@@ -1,0 +1,12 @@
+.tab {
+    font-size: 1.8rem;
+  &__names {
+    background-color: $color-red;
+  }
+  &__scores {
+    background-color: $color-black-2;
+    border-right: 1px solid $color-white;
+    border-left: 1px solid $color-white;
+    font-weight: 600;
+  }
+}

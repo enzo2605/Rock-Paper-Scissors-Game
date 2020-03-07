@@ -15,7 +15,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #eee;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: 'Lato'; }
 
 .wrapper {
@@ -60,6 +61,14 @@ body {
 
 .results {
   text-transform: capitalize; }
+
+.animation-modal {
+  transform: translate(-50%, -50%) scale(1.15) !important;
+  transition: all .4s; }
+
+.max-50-centered {
+  max-width: 50%;
+  margin: 1rem auto; }
 
 .box-game {
   width: 100%;
@@ -109,6 +118,79 @@ body {
     text-align: center; }
     .box-game__choices--el {
       text-align: center; }
+
+.btn, .btn:visited, .btn:link {
+  color: #fff;
+  text-decoration: none;
+  background-color: #EB4D4D;
+  padding: .5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 4rem;
+  display: inline-block; }
+
+.btn:not(:last-child) {
+  margin-right: 2rem; }
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all .7s;
+  /*
+    &__choices {
+    }
+    
+    &__text {
+    }
+    &__exit {
+    }*/ }
+  .modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.15);
+    border-radius: 2rem;
+    box-shadow: 0 1.5rem 3rem black;
+    background-color: #0056ff;
+    color: #fff;
+    width: 50rem;
+    max-width: 80%;
+    font-size: 3rem;
+    padding: 3rem;
+    text-align: center;
+    transition: all 2s .2s; }
+  .modal__text, .modal__choices {
+    margin-top: 2rem; }
+  .modal__exit {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    color: #fff;
+    background-color: #EB4D4D;
+    font-weight: 800;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 50%;
+    outline: none; }
+    .modal__exit:hover {
+      cursor: pointer; }
+
+.tab {
+  font-size: 1.8rem; }
+  .tab__names {
+    background-color: #EB4D4D; }
+  .tab__scores {
+    background-color: #24272E;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    font-weight: 600; }
 
 .row {
   display: flex;
