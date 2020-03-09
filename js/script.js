@@ -68,6 +68,7 @@ for (let i = 0; i < choices.length; i++) {
 modal_exit.addEventListener('click', function () {
     modal.style.display = 'none';
     modal_content.classList.remove('animation-modal');
+    init();
 });
 
 /***************************************************************************
@@ -78,7 +79,12 @@ function init() {
     scores = [0,0];
     usrScore = 0;
     pcScore = 0;
-    
+    //1. Reset scoreboard
+    scoreUsrEl.textContent = usrScore;
+    scorePcEl.textContent = pcScore;
+    //2. Reset box-game results
+    img_user_result.src = ' '; 
+    img_pc_result.src = ' '; 
 }
 
 function computer() {
